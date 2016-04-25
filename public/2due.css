@@ -59,7 +59,7 @@ h1 {
   display: inline-block;;
 }
 #content {
-	height: 585px;
+	height: 580px;
 	text-align:center;
 	background-color: white;
 }
@@ -71,18 +71,21 @@ h2 {
 }
 h3 {
   width: 100%;
-  padding: 10px 10px;
+  padding: 5px 5px 10px 5px;
+	margin-bottom: 15px;
   font-size: 1.25em;
 }
 h4 {
 	width: 100%;
-  padding: 10px 10px;
+	margin: 0px;
+  padding: 10px;
   font-size: 1.25em;
 }
 ul {
-	width: 44%;
+	width: 35%;
+	margin: 5px;
   padding: 2%;
-  background-color: silver;
+  background-color: #E0E0E0;
   border: 1px solid black;
 	text-align: left;
 	display:-moz-inline-stack;
@@ -90,45 +93,58 @@ ul {
 	zoom:1;
 	*display:inline;
 }
-li {
-  padding: 3px;
-}
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #152837;
+    color:    #727d84;
     font-style: italic;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #152837;
+   color:    #727d84;
    opacity:  1;
    font-style: italic;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #152837;
+   color:    #727d84;
    opacity:  1;
    font-style: italic;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #152837;
+   color:    #727d84;
    font-style: italic;
 }
 #done-button {
-  padding: 4%;
+  padding: 2%;
   background-color: #6fbbb7;
   border: 1px solid black;
 	font-size: 1.5em;
+	vertical-align: middle;
   border-radius: 50%;
 }
 #to-do-item {
+	width: 87%;
 	margin: 5px;
-	padding: 5px 70px;
+	padding: 5px 0px 5px 0px;
 	font-size: 1.15em;
-	vertical-align: bottom;
-	background-color: silver;
+	vertical-align: middle;
+	background-color: #E0E0E0;
 }
 #footer {
 	padding: 1%;
   text-align: right;
   font-size: .75em;
 	background-color: #727d84;
+}
+@media screen and (max-width:700px) {
+	li {
+		width: 100%;
+	}
+	/*#to-do-item {
+		width: 100%;
+	}
+}*/
+@media screen and (max-width:320px) {
+	#container {
+		width: 320px;
+	}
 }
